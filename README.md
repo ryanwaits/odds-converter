@@ -14,7 +14,9 @@ Example:
 
 ### Decimal to Fraction
 
-`// coming shortly`
+`odds.decimal.toFractional(1.75).simplify(); // (3/4)`
+
+`odds.decimal.toFractional(3.5).simplify(); // (5/2)`
 
 ### Fraction to American
 
