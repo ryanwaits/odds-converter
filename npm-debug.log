@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.7.2
+3 info using node@v4.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/ryanwaits/Code/programs/node-packages/odds-converter',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/ryanwaits/.npm/odds-converter/1.0.3/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/ryanwaits/.npm correctMkdir not in flight; initializing
+10 info lifecycle odds-converter@1.0.3~prepublish: odds-converter@1.0.3
+11 silly lifecycle odds-converter@1.0.3~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/ryanwaits/.npm/odds-converter/1.0.3/package.tgz',
+12 verbose tar pack   '/Users/ryanwaits/Code/programs/node-packages/odds-converter' ]
+13 verbose tarball /Users/ryanwaits/.npm/odds-converter/1.0.3/package.tgz
+14 verbose folder /Users/ryanwaits/Code/programs/node-packages/odds-converter
+15 verbose addLocalTarball adding from inside cache /Users/ryanwaits/.npm/odds-converter/1.0.3/package.tgz
+16 verbose correctMkdir /Users/ryanwaits/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd odds-converter@1.0.3
+18 verbose afterAdd /Users/ryanwaits/.npm/odds-converter/1.0.3/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/ryanwaits/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/ryanwaits/.npm/odds-converter/1.0.3/package/package.json written
+21 silly publish { name: 'odds-converter',
+21 silly publish   version: '1.0.3',
+21 silly publish   description: 'convert odds between american, decimal, and fractional formats',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'sports', 'odds', 'conversion', 'formulas' ],
+21 silly publish   author: { name: 'Ryan Waits' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/ryanwaits/odds-converter.git' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { 'fractional-arithmetic': '^1.2.0' },
+21 silly publish   readme: '## Odds Converter\n\n`npm install odds-converter`\n\n` var odds = require(\'odds-converter\')`\n\n### Decimal to American\n\nExample:\n\n`odds.decimal.toAmerican(2.25); // 125.00`\n\n`odds.decimal.toAmerican(1.90); // -111.11`\n\n### Decimal to Fraction\n\n`odds.decimal.toFractional(1.75).simplify(); // (3/4)`\n\n`odds.decimal.toFractional(3.5).simplify(); // (5/2)`\n\n### Fraction to American\n\n`odds.fraction.toAmerican(7,4); // 175`\n\n`odds.fraction.toAmerican(5,6); // -120`\n\n### Fraction to Decimal\n\n`odds.fraction.toDecimal(3,2); // 3.2`\n\n`odds.fraction.toDecimal(1,5); // 1.2`\n\n### American to Decimal\n\n`odds.american.toDecimal(225); // 3.25`\n\n`odds.american.toDecimal(-110); // 1.91`\n\n### American to Fraction\n\n`odds.american.toFractional(225).simplify(); // (9/4)`\n\n`odds.american.toFractional(-125).simplify(); // (4/5)`\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '5446826ae69b8ff2eb9a2ef59a99488672f5f10e',
+21 silly publish   bugs: { url: 'https://github.com/ryanwaits/odds-converter/issues' },
+21 silly publish   homepage: 'https://github.com/ryanwaits/odds-converter#readme',
+21 silly publish   _id: 'odds-converter@1.0.3',
+21 silly publish   _shasum: '25fd73270be4ed4d943d7c011c47bbcc016845ca',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name odds-converter
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/odds-converter
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/ryanwaits/.npm/odds-converter/1.0.3/package.tgz
+29 verbose request uri https://registry.npmjs.org/odds-converter
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 3:01:55 PM
+32 verbose request using bearer token for auth
+33 verbose request id e796bb0cb2522209
+34 http request PUT https://registry.npmjs.org/odds-converter
+35 http 403 https://registry.npmjs.org/odds-converter
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 19 Mar 2016 20:01:56 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-ord1723-ORD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1458417715.504024,VS0,VE945' }
+37 verbose request invalidating /Users/ryanwaits/.npm/registry.npmjs.org/odds-converter on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.3." : odds-converter
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid odds-converter
+42 verbose cwd /Users/ryanwaits/Code/programs/node-packages/odds-converter
+43 error Darwin 15.3.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.3.0
+46 error npm  v3.7.2
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.3." : odds-converter
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
