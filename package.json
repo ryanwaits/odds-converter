@@ -1,6 +1,6 @@
 {
   "name": "odds-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "convert odds between american, decimal, and fractional formats",
   "main": "index.js",
   "scripts": {
