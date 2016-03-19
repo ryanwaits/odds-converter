@@ -6,8 +6,9 @@ OddsConverter.decimal = {
         decimal < 2.0 ? moneyline = ( (-100)/(decimal - 1) ).toPrecision(5) : moneyline = ( (decimal - 1) * 100 ).toPrecision(5);
         return moneyline;
     },
-    toFraction: function(decimal){
-        // decimal to fraction
+    toFractional: function(decimal){
+        fraction = new Fraction((decimal - 1));
+        return fraction;
     }
 }
 OddsConverter.fraction = {
