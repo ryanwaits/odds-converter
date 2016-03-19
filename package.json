@@ -1,0 +1,20 @@
+{
+  "name": "odds-converter",
+  "version": "1.0.1",
+  "description": "convert odds between american, decimal, and fractional formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sports",
+    "odds",
+    "conversion",
+    "formulas"
+  ],
+  "author": "Ryan Waits",
+  "license": "ISC",
+  "dependencies": {
+    "fractional-arithmetic": "^1.2.0"
+  }
+}
