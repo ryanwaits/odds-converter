@@ -7,7 +7,7 @@ OddsConverter.decimal = {
         return moneyline;
     },
     toFractional: function(decimal){
-        fraction = new Fraction((decimal - 1));
+        fraction = Fraction((decimal - 1));
         return fraction;
     }
 }
