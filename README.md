@@ -26,7 +26,7 @@ Example:
 
 ### Fraction to Decimal
 
-`odds.fraction.toDecimal(3,2); // 3.2`
+`odds.fraction.toDecimal(3,2); // 2.5`
 
 `odds.fraction.toDecimal(1,5); // 1.2`
 
